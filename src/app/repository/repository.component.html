@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-4" *ngFor="let item of arrayData" style="margin-bottom: 20px">
+      <div class="card" [ngClass]="{'bg-warning': item.fork == true , 'bg-white': item.fork !== true }" style="margin-bottom: 10px; min-height: 200px">
+      <div class="card-body">
+        <a href="{{item.html_url}}" target="_blank" style="text-decoration: none; color: #000"><h5 class="card-title">{{item.name | truncate:[25] }}</h5></a>
+        <h6 class="card-subtitle mb-2 text-muted">Language: {{item.language}}, Size: {{item.size}}</h6>
+        <p class="card-text">{{item.description | truncate:[50] }}</p>
+        <ul class="list-inline Left">
+        <li class="list-inline-item" style="margin-right: 30px"><i class="fa fa-star"> {{item.stargazers_count}}</i></li>
+        <li class="list-inline-item" style="margin-right: 30px"><i class="fa fa-eye"> {{item.watchers_count}}</i></li>
+        <li class="list-inline-item"><i class="fa fa-code-fork"> {{item.forks_count}}</i></li>
+      </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>

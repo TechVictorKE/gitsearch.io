@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="/">
+    <img src="https://www.teenvio.com/es/wp-content/plugins/g1-social-icons/images/github/github-256.png" width="50" height="50" alt="logo">
+    {{ title }}
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/user">Search User</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/organization">Search Organization</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <div class="card text-center" style="margin-top: 20px">
+        <div class="card-body">
+          <a routerLink="user" class="btn btn-primary">Search User</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-xs-12 col-md-6">
+      <div class="card text-center" style="margin-top: 20px">
+        <div class="card-body">
+          <a routerLink="organization" class="btn btn-primary">Search Organisation</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
