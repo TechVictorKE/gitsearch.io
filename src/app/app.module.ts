@@ -30,3 +30,4 @@ import { TruncatePipe } from './truncate.pipe';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
